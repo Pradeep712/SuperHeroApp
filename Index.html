@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <script src="Code.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#example').DataTable( {
+            data: superHerosList,
+            columns: [
+                { title: "ID" },
+                { title: "HERO"}
+            ]
+        });
+        var table = $('#example').DataTable();     
+        $('#example tbody').on('click', 'tr', function () {
+            var data = table.row( this ).data();
+            myFunction(data[0]);
+        });
+        
+    });
+    </script>
+    <style>
+    html{
+        margin: 0;
+        background-image: url("http://getwallpapers.com/wallpaper/full/8/a/6/591925.jpg ");
+        /* http://getwallpapers.com/wallpaper/full/c/8/6/771417-gorgerous-marvel-super-heroes-wallpaper-1920x1080.jpg */
+        /* http://getwallpapers.com/wallpaper/full/8/a/6/591925.jpg */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1{
+        font-style: italic;
+        text-align: center; 
+    }
+    p{
+        color: white;
+        text-align: center;
+        margin-top: -3%;
+        /* margin-bottom: -7%; */
+        font-size: 110px;
+        text-shadow: 4px 4px #FF0000;
+    }
+</style>
+<div class="header" id="headers" style="margin: 0;background-image: url('http://getwallpapers.com/wallpaper/full/7/4/b/123942.jpg');height: 100%;
+background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <p>Super Heros List</p>
+</div>  
+</head>
+<body>    	
+    <div class="card" style="background-color: white;margin-left: 5%;margin-right: 5%;padding: 1%;margin-top:-5% ;">
+        <table id="example" class="display;hover" style="width: 100%;height: 100%;text-align: center;background-color: lightsteelblue;"></table>
+    </div>
+</body>
+</html>

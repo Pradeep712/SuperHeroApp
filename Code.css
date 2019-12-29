@@ -1,0 +1,63 @@
+p{
+    color: white;
+    text-align: center;
+    margin-top: -3%;
+    /* margin-bottom: -7%; */
+    font-size: 110px;
+    text-shadow: 4px 4px #FF0000;
+}
+.super-hero-wrapper{
+    width:90%;
+    margin:20px auto;
+    overflow:hidden;  
+    box-shadow: 2px 2px 8px gray;
+}
+.super-hero-container{
+    padding: 30px;
+    box-sizing: border-box;
+    height:100%;
+}
+.super-hero-image{
+    float:left;
+    width:35%;
+}
+.super-hero-information{
+    float:right;
+    width: 65%;
+}
+.super-hero-biography{
+    width:100%;
+    font-size:15px;
+    line-height: 1.6;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-weight:bold;
+    padding-bottom: 30px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}  
+td, th {
+    border: 3px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 15px;
+}  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+.super-hero-info-wrapper{
+    box-sizing: border-box;
+    padding:0px 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-weight:bold;
+}
+.super-hero-connections{
+    padding-bottom: 30px;
+}
